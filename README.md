@@ -1,3 +1,11 @@
+---
+title: Multi Agent Research Assistant
+emoji: 🕵️
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+pinned: false
+---
 # Multi-Agent Research Assistant
 
 An autonomous AI research assistant powered by LangGraph, Google Gemini, and DuckDuckGo. 
