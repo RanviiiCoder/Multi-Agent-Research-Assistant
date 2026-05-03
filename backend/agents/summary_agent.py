@@ -5,7 +5,7 @@ from backend.vector_store.faiss_store import vector_db
 
 def summary_node(state: ResearchState) -> dict:
     print("--- SUMMARIZING ---")
-    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", google_api_key=settings.GEMINI_API_KEY)
+    llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", google_api_key=settings.GEMINI_API_KEY)
     
     # Retrieve top relevant docs for the topic
     docs = vector_db.search(state["topic"], k=5)

@@ -6,7 +6,7 @@ from backend.vector_store.faiss_store import vector_db
 import json
 
 def generate_search_queries(topic: str) -> list[str]:
-    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", google_api_key=settings.GEMINI_API_KEY)
+    llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", google_api_key=settings.GEMINI_API_KEY)
     prompt = f"You are a research assistant. Generate 3 distinct search queries to thoroughly research the following topic: '{topic}'. Return ONLY a JSON list of strings."
     
     response = llm.invoke(prompt)

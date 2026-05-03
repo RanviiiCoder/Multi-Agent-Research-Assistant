@@ -4,7 +4,7 @@ from backend.agents.state import ResearchState
 
 def writer_node(state: ResearchState) -> dict:
     print("--- WRITING REPORT ---")
-    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", google_api_key=settings.GEMINI_API_KEY)
+    llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", google_api_key=settings.GEMINI_API_KEY)
     
     summaries = "\n".join(state.get("summaries", []))
     feedback = state.get("critic_feedback", "")
