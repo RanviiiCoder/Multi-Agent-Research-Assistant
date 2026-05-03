@@ -29,4 +29,7 @@ async def generate_research_report(request: ResearchRequest):
             revisions=result.get("revision_count", 0)
         )
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        import traceback
+        error_msg = traceback.format_exc()
+        print(f"ERROR: {error_msg}")
+        raise HTTPException(status_code=500, detail=error_msg)
