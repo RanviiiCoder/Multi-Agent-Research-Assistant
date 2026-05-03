@@ -8,6 +8,8 @@ pinned: false
 ---
 # Multi-Agent Research Assistant
 
+🚀 **[Try the Live Application on Hugging Face Spaces!](https://huggingface.co/spaces/RanviiiCoder/Multi-Agent-Research-Assistant)**
+
 An autonomous AI research assistant powered by LangGraph, Google Gemini, and DuckDuckGo. 
 
 ## Overview
